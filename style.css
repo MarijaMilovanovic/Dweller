@@ -312,12 +312,12 @@ form input:focus-visible {
 
 form input[type="submit"] {
     border: none;
-    background-color: var(--success);
+    background-color: var(--primary);
     color: var(--text-white);
 }
 
 form input[type="submit"]:hover {
-    background-color: var(--success-hover);
+    background-color: var(--primary-dark);
 }
 
 .social-login {
