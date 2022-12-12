@@ -91,20 +91,34 @@
             <h1 class="title">Create an Account</h1>
 
             <form method="get" action="./Browse.html">
-                <label for="first-name">First Name:</label><br>
-                <input type="text" id="first-name" required><br>
+                <div>
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" id="first-name" placeholder="First Name" minlength="2" required>
+                    <label class="error-label">First Name Must have atleast 2 characters.</label><br>
+                </div>
 
-                <label for="last-name">Last Name:</label><br>
-                <input type="text" id="last-name" required><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" required><br>
-
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" required><br>
-
-                <label for="confirm-password">Confirm Password:</label><br>
-                <input type="password" id="confirm-password" required><br>
+                <div>
+                    <label for="last-name">Last Name:</label><br>
+                    <input type="text" id="last-name" placeholder="Last Name" minlength="2" required>
+                    <label class="error-label">Last Name Must have atleast 2 characters.</label><br>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                    <label class="error-label">Please use a valid email address.</label><br>
+                </div>
+                <div>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="****" minlength="8" maxlength="24" required>
+                    <label class="error-label">Password must be between 8 and 24 characters.</label><br>
+                </div>
+                
+                <div>
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="****" minlength="8" maxlength="24" required>
+                    <label class="error-label">Password must be between 8 and 24 characters.</label><br>
+                </div>
 
                 <input type="submit" value="Create Account" class="btn">
             </form>

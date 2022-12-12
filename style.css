@@ -13,6 +13,8 @@ html {
     --primary-light: #f0f8ff;
     --success: #50C878;
     --success-hover: #50A965;
+    --error: #FF4136;
+    --error-transparent: rgba(255, 65, 54, 0.75);
     --text-dark: #191919;
     --text-disabled: #838990;
     --text-white: #FFFFFF;
@@ -318,6 +320,23 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: var(--primary-dark);
+}
+
+.error-label {
+    display: none;
+    font-size: var(--font-size-s);
+    color: var(--error);
+}
+
+form input:not(:placeholder-shown):invalid {
+    border-color: var(--error-transparent);
+    -webkit-box-shadow: 0px 0px 5px var(--error-transparent);;
+    -moz-box-shadow: 0px 0px 5px var(--error-transparent);;
+    box-shadow: 0px 0px 5px var(--error-transparent);
+}
+
+form input:not(:placeholder-shown):invalid ~ .error-label {
+    display: block;
 }
 
 .social-login {

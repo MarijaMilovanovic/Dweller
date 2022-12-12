@@ -92,9 +92,12 @@
 
             <form action="./Browse.html" method="get" id="login-form">
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="user@example.com" required><br>
+                <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                <label class="error-label">Please use a valid email address.</label>
+                <br>
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" placeholder="Password" minlength="8" maxlength="24" required><br><br>
+                <input type="password" id="password" name="password" placeholder="****" minlength="8" maxlength="24" required>
+                <label class="error-label">Password must be between 8 and 24 characters.</label><br>
                 <input type="submit" value="Login" class="btn">
             </form>
 
