@@ -40,16 +40,24 @@ html {
     --spacing-xxxl: 88px;
 }
 
-h1 {
+.title {
+    text-align: center;
     font-size: var(--font-size-l);
     font-weight: var(--font-medium);
+    margin-bottom: var(--spacing-xl);
+}
+
+.title-2 {
     text-align: center;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-regular);
+    margin-bottom: var(--spacing-s);
 }
 
 p {
+    text-align: left;
     font-size: var(--font-size-m);
     font-weight: var(--font-regular);
-    text-align: left;
     line-height: 28px;
 }
 
@@ -58,30 +66,37 @@ a {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-medium);
     font-family: 'Fira Sans';
     text-align: center;
+    border-radius: 6px;
+    transition: all 200ms ease-in;
 }
 
 #page-wrapper {
-    flex-direction: column;
     display: flex;
-    width: 100%;
+    flex-direction: column;
     font-family: 'Montserrat';
+    width: 100%;
 }
 
 #navbar-container {
     position: fixed;
     z-index: 2;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    display: flex;
-    box-shadow: 0 0 8px rgba(0,0,0,0.6);
-    box-sizing: border-box;
     width: 100%;
     height: 64px;
     padding: var(--spacing-s);
     background-color: var(--primary);
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
 }
 
 #navbar-logo {
@@ -91,41 +106,41 @@ a {
 #navbar-container input[type="checkbox"]#toggle-menu {
     position: absolute;
     z-index: 5;
-    top: 50%;
-    right: 16px;
     display: block;
-    opacity: 0;
-    transform: translate(0, -50%);
     width: 35px;
     height: 24px;
+    top: 50%;
+    right: 16px;
+    transform: translate(0, -50%);
+    opacity: 0;
     cursor: pointer;
 }
 
 #navbar-container #navbar-menu-hamburger {
     position: absolute;
     z-index: 3;
-    top: 50%;
-    right: 16px;
     display: block;
-    transform: translate(0, -50%);
     width: 35px;
     height: 24px;
+    top: 50%;
+    right: 16px;
+    transform: translate(0, -50%);
 }
 
 #menu-links {
     position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: var(--spacing-xxl) var(--spacing-m) var(--spacing-m);
     top: 0;
     right: -100%;
     flex-direction: column;
     align-items: center;
-    display: flex;
     opacity: 20;
     transition: all 0.8s ease-in;
-    box-shadow: -5px -5px 8px 2px rgba(0,0,0,0.08);
     box-sizing: border-box;
-    width: 100%;
-    height: 100vh;
-    padding: var(--spacing-xxl) var(--spacing-m) var(--spacing-m);
+    box-shadow: -5px -5px 8px 2px rgba(0,0,0,0.08);
     background-color: var(--primary);
     list-style: none;
     font-size: var(--font-size-l);
@@ -137,27 +152,27 @@ a {
 }
 
 #menu-links hr {
-    margin: var(--spacing-s);
-    border: none;
     width: 80%;
     height: 1px;
+    margin: var(--spacing-s);
+    border: none;
     background: var(--text-white);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 15%, var(--text-white) 50%, rgba(255,255,255,0.5) 85%, rgba(255,255,255,0) 100%);
 }
 
 .menu-link {
-    z-index: 5;
+    text-align: center;
+    width: 80%;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    width: 80%;
-    text-align: center;
+    z-index: 5;
 }
 
 .menu-link.active {
-    box-shadow: -2px 0px 4px 2px rgba(0,0,0,0.08);
     padding: var(--spacing-xs);
-    background-color: rgba(255, 255, 255, 0.02)
+    box-shadow: -2px 0px 4px 2px rgba(0,0,0,0.08);
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 .menu-link.active a {
@@ -183,15 +198,16 @@ a {
 }
 
 .page-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    display: flex;
     margin: var(--spacing-xxl) 0px;
-    box-sizing: border-box;
     padding: var(--spacing-xl) var(--spacing-m) var(--spacing-s);
+    box-sizing: border-box;
+    min-height: 60vh;
 }
 
-.app-headline {
+.title {
     margin-bottom: var(--spacing-xl);
 }
 
@@ -209,26 +225,18 @@ a {
 }
 
 .cta {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-bottom: var(--spacing-xxxl);
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
     width: 40%;
     height: 48px;
     background-color: var(--success);
-    font-size: var(--font-size-m);
     color: var(--text-white);
-    transition: all 200ms ease-in;
+    margin-bottom: var(--spacing-xxxl);
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
 }
 
 .section:not(:last-child) {
@@ -245,24 +253,13 @@ a {
     margin-bottom: var(--spacing-s);
 }
 
-.section-title {
-    font-size: var(--font-size-m);
-    font-weight: var(--font-semiBold);
-    text-align: center;
-    margin-bottom: var(--spacing-s);
-}
-
-.section-desc {
-    text-align: left;
-}
-
 #city-image-animated {
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
     animation-name: fadeIn;
     animation-duration: 2s;
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
 }
 
 #city-image {
@@ -275,12 +272,12 @@ a {
     z-index: 1;
     bottom: 0;
     right: -15%;
+    width: 15%;
     animation-name: moveBus;
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-timing-function:cubic-bezier(0.4, 1, 0.355, 0.215);
     animation-delay: 2.2s;
-    width: 15%;
 }
 
 #footer {
@@ -289,17 +286,17 @@ a {
 }
 
 #footer-main {
-    flex-direction: column;
     display: flex;
-    box-sizing: border-box;
+    flex-direction: column;
     padding: var(--spacing-m);
+    box-sizing: border-box;
     background-color: var(--surface-400);
 }
 
 #footer-logo-btt {
-    justify-content: space-between;
-    align-items: baseline;
     display: flex;
+    align-items: baseline;
+    justify-content: space-between;
     margin-bottom: var(--spacing-l);
 }
 
@@ -308,8 +305,8 @@ a {
 }
 
 .footer-links > div {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
 }
 
 .footer-links > div:not(:last-child) {
@@ -325,19 +322,19 @@ a {
 }
 
 #madeby {
-    justify-content: center;
-    align-items: center;
     display: flex;
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
     height: 48px;
+    box-sizing: border-box;
     background-color: var(--surface-50);
 }
 
 #madeby p {
-    font-size: var(--font-size-s);
-    font-weight: var(--font-regular);
-    text-align: center;
     color: var(--text-white);
+    text-align: center;
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-s);
 }
 
 #menu-links-lg, #toggle-account-menu, #account-icon, #account-links, #app-description-img, #app-description-img-park {
@@ -346,13 +343,13 @@ a {
 
 @keyframes moveBus {
     from {
-        right: -15%;
         display: block;
+        right: -15%;
     }
   
     to {
-      right: 100%;
-      display: none;
+        display: none;
+        right: 100%;
     }
 }
 
@@ -419,12 +416,12 @@ a {
 
     #account-links {
         position: absolute;
-        right: 50%;
         top: 50px;
-        display: none;
+        right: 50%;
         flex-direction: column;
-        background-color: var(--surface-white);
+        display: none;
         padding: var(--spacing-s) var(--spacing-l);
+        background-color: var(--surface-white);
         box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.08);
     }
 
@@ -441,36 +438,36 @@ a {
         color: var(--primary-dark);
     }
 
+    #account-links .active a {
+        color: var(--primary-dark);
+    }
+
     #navbar-container input[type="checkbox"]#toggle-account-menu {
         position: absolute;
-        z-index: 5;
         top: 50%;
         right: 16px;
+        z-index: 5;
         display: block;
-        opacity: 0;
-        transform: translate(0, -50%);
         width: 35px;
         height: 24px;
+        opacity: 0;
+        transform: translate(0, -50%);
         cursor: pointer;
     }
     
     #navbar-container #account-icon {
         position: absolute;
-        z-index: 3;
         top: 50%;
         right: 24px;
+        z-index: 3;
         display: block;
-        transform: translate(0, -50%);
         width: 36px;
         height: 36px;
+        transform: translate(0, -50%);
     }
 
     #navbar-container input[type="checkbox"]#toggle-account-menu:checked ~ #account-links {
         display: flex;
-    }
-
-    .app-headline {
-        font-size: var(--font-size-xl);
     }
 
     #app-desc-container {
@@ -489,25 +486,23 @@ a {
         width: 40%;
     }
 
-    .btn.cta {
+    .cta {
         width: 240px;
         height: 48px;
-        font-weight: var(--font-medium);
-        font-size: var(--font-size-l);
     }
 
-    .btn.cta:hover {
-        background-color: var(--success-light);
+    .cta:hover {
         box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.4);
+        background-color: var(--success-light);
     }
 
     .section {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        box-sizing: border-box;
-        padding: var(--spacing-s);
         width: 100%;
+        padding: var(--spacing-s);
+        box-sizing: border-box;
     }
 
     .section:not(:last-child) {
@@ -528,7 +523,7 @@ a {
         margin-bottom: unset;
     }
 
-    .section-title {
+    .title-2 {
         font-size: var(--font-size-l);
         font-weight: var(--font-regular);
     }

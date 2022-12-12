@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
-    <title>Dweller</title>
+    <title>Login - Dweller</title>
 </head>
 
 <body>
@@ -34,14 +34,14 @@
                     <li style="list-style: none; display: inline">
                         <a href="/"><img alt="dweller logo" id="menu-logo" src="./assets/Logo-white.svg"></a>
                     </li>
-                    <li class="menu-link">
+                    <li class="menu-link active">
                         <a href="./Login.html">Login</a>
                     </li>
                     <li class="menu-link">
                         <a href="./Register.html">Register</a>
                     </li>
                     <hr>
-                    <li class="menu-link active">
+                    <li class="menu-link">
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="menu-link">
@@ -56,7 +56,7 @@
                 </ul>
 
                 <ul id="menu-links-lg">
-                    <li class="menu-link active">
+                    <li class="menu-link">
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="menu-link">
@@ -73,7 +73,7 @@
                 <div id="acc-links-container">
                     <input id="toggle-account-menu" type="checkbox">
                     <ul id="account-links">
-                        <li class="menu-link">
+                        <li class="menu-link active">
                             <a href="./Login.html">Login</a>
                         </li>
                         <li class="menu-link">
@@ -88,59 +88,20 @@
         <a id="top" name="top"></a>
 
         <div class="page-content">
-            <h1 class="title">Your Dream Home Awaits</h1>
+            <h1 class="title">Log in to Dweller</h1>
 
-            <div id="app-desc-container"><img alt="city image" id="app-description-img" src="./assets/city-small.svg">
+            <form action="/login" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Submit">
+              </form>
 
-                <div class="app-description">
-                    <p>This revolutionary apartment renting app is designed to make the process of finding your next
-                        home a breeze.</p>
+              <a href="https://www.google.com/">Login with Google</a><br>
+              <a href="https://www.facebook.com/">Login with Facebook</a>
 
-                    <p>Get ready to move in with the help of <span>Dweller!</span></p>
-                </div>
-                <img alt="park image" id="app-description-img-park" src="./assets/park.svg">
-            </div>
-            <a class="btn cta" href="./Browse.html">Start Browsing</a>
-
-            <div class="section">
-                <img src="./assets/house-search.svg" alt="house-search" class="section-img">
-                <div class="section-text">
-                    <h3 class="title-2">Search and Filter</h3>
-                    <p">
-                        Find your perfect apartment with our advanced search and filter tools based on your desired location, price range, and other criteria.
-                    </p>
-                </div>
-            </div>
-            <div class="section">
-                <img src="./assets/virtual-tour.svg" alt="virtual-tour" class="section-img">
-                <div class="section-text">
-                    <h3 class="title-2">Virtual Tours</h3>
-                    <p>
-                        Experience apartments like never before with our virtual tours. This will give you a better sense of what the apartment looks like before you decide to rent it.
-                    </p>
-                </div>
-            </div>
-            <div class="section">
-                <img src="./assets/communication.svg" alt="communication" class="section-img">
-                <div class="section-text">
-                    <h3 class="title-2">Communication and Coordination</h3>
-                    <p>
-                        This feature allows you to communicate with landlords and property managers, as well as schedule and manage appointments to view apartments.
-                    </p>
-                </div>
-            </div>
-            <div class="section">
-                <img src="./assets/agreement.svg" alt="agreement" class="section-img">
-                <div class="section-text">
-                    <h3 class="title-2">Rental Agreement and Payment</h3>
-                    <p>
-                        Review and sign rental agreements, as well as make payments for your apartments.
-                    </p>
-                </div>
-            </div>
-
-            <div id="city-image-animated"><img alt="image of a city" id="city-image" src="./assets/city.svg"> <img
-                    alt="bus" id="bus-image" src="./assets/bus.svg"></div>
+              <a href="./Register.html">Don't have an account?</a>
         </div>
 
 
