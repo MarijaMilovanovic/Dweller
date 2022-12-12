@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
-    <title>Login - Dweller</title>
+    <title>Dweller</title>
 </head>
 
 <body>
@@ -34,14 +34,14 @@
                     <li style="list-style: none; display: inline">
                         <a href="/"><img alt="dweller logo" id="menu-logo" src="./assets/Logo-white.svg"></a>
                     </li>
-                    <li class="menu-link active">
+                    <li class="menu-link">
                         <a href="./Login.html">Login</a>
                     </li>
                     <li class="menu-link">
                         <a href="./Register.html">Register</a>
                     </li>
                     <hr>
-                    <li class="menu-link">
+                    <li class="menu-link active">
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="menu-link">
@@ -56,7 +56,7 @@
                 </ul>
 
                 <ul id="menu-links-lg">
-                    <li class="menu-link">
+                    <li class="menu-link active">
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="menu-link">
@@ -73,7 +73,7 @@
                 <div id="acc-links-container">
                     <input id="toggle-account-menu" type="checkbox">
                     <ul id="account-links">
-                        <li class="menu-link active">
+                        <li class="menu-link">
                             <a href="./Login.html">Login</a>
                         </li>
                         <li class="menu-link">
@@ -90,21 +90,25 @@
         <div class="page-content">
             <h1 class="title">Log in to Dweller</h1>
 
-            <form action="/login" method="post">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br>
+            <form action="./Browse.html" method="get" id="login-form">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="user@example.com"><br>
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password"><br><br>
-                <input type="submit" value="Submit">
-              </form>
+                <input type="password" id="password" name="password" placeholder="Password" minlength="8" maxlength="24"><br><br>
+                <input type="submit" value="Login" class="btn">
+            </form>
 
-              <a href="https://www.google.com/">Login with Google</a><br>
-              <a href="https://www.facebook.com/">Login with Facebook</a>
+                <a href="https://www.google.com/" class="social-login">
+                    <img src="./assets/logos_google-icon.svg" alt="google login">
+                    <p>Login with Google</p> 
+                </a>
+                <a href="https://www.facebook.com/" class="social-login fb">
+                    <img src="./assets/logos_facebook.svg" alt="facebook login">
+                    <p>Login with Facebook</p> 
+                </a>
 
-              <a href="./Register.html">Don't have an account?</a>
+              <a href="./Register.html" class="form-link">Don't have an account?</a>
         </div>
-
-
         <div id="footer">
             <div id="footer-main">
                 <div id="footer-logo-btt">
