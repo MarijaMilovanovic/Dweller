@@ -675,12 +675,16 @@ form textarea {
     }
 
     #menu-links-lg {
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         display: flex;
         width: 100%;
         font-size: var(--font-size-m);
         font-weight: var(--font-regular);
+    }
+
+    #menu-links-lg .menu-link {
+        margin-right: var(--spacing-xxl);
     }
 
     .menu-link a {
