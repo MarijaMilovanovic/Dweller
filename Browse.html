@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" type="image/svg+xml" href="./assets/Logo-sm.svg">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Browse - Dweller</title>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div id="navbar-container">
+            <a href="/"><img alt="dweller logo" id="navbar-logo" src="./assets/Logo-white.svg"></a>
+
+            <div id="navbar-content">
+                <input id="toggle-menu" type="checkbox">
+                <svg height="28" id="navbar-menu-hamburger" viewbox="0 0 37 28"
+                    width="37" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2H34.2941M2 14H34.2941M20.1654 26H27.2298H34.2941" stroke="white" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="4"></path>
+                </svg>
+
+                <ul id="menu-links">
+                    <li style="list-style: none; display: inline">
+                        <a href="/"><img alt="dweller logo" id="menu-logo" src="./assets/Logo-white.svg"></a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="./Login.html">Login</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="./Register.html">Register</a>
+                    </li>
+                    <hr>
+                    <li class="menu-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="menu-link active">
+                        <a href="./Browse.html">Browse</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="./About.html">About</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <ul id="menu-links-lg">
+                    <li class="menu-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="menu-link active">
+                        <a href="./Browse.html">Browse</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="./About.html">About</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div id="acc-links-container">
+                    <input id="toggle-account-menu" type="checkbox">
+                    <ul id="account-links">
+                        <li class="menu-link">
+                            <a href="./Login.html">Login</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="./Register.html">Register</a>
+                        </li>
+                    </ul>
+                    <img alt="account" id="account-icon" src="./assets/Account.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="browse-top">
+            <form action="./Browse.html">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <a id="top" name="top"></a>
+        <div class="page-content page-browse">
+            <h1 class="title">Explore Apartments</h1>
+            <div class="browse">
+                <a class="apt-card" href="./Apartment.html">
+                        <img src="./assets/apartment-1.jpg" alt="apartment image">
+                        <div class="apt-info">
+                            <div class="apt-title">
+                                <h4>Beautiful 1-bedroom apartment in the heart of the city</h4>
+                                <span>500&euro; / monthly<span>
+                            </div>
+                            <div class="apt-props">
+                                <div class="apt-prop">
+                                    <img src="./assets/Room.svg" class="prop-icon">
+                                    <p>1.0</p>
+                                </div>
+                                <div class="apt-prop">
+                                    <img src="./assets/size.svg" class="prop-icon">
+                                    <p>64m2</p>
+                                </div>
+                                <div class="apt-prop">
+                                    <img src="./assets/location.svg" class="prop-icon">
+                                    <p>Belgrade</p>
+                                </div>
+                            </div>
+                            <p>This stunning 1-bedroom apartment is located in the heart of the city, 
+                                just steps away from popular restaurants ( ... )
+                            </p>
+                        </div>
+                </a>
+                <a class="apt-card" href="./Apartment.html">
+                    <img src="./assets/apartment-2.jpg" alt="apartment image">
+                    <div class="apt-info">
+                        <div class="apt-title">
+                            <h4>Cozy studio apartment in a prime location</h4>
+                            <span>450&euro; / monthly<span>
+                        </div>
+                        <div class="apt-props">
+                            <div class="apt-prop">
+                                <img src="./assets/Room.svg" class="prop-icon">
+                                <p>0.5</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/size.svg" class="prop-icon">
+                                <p>30m2</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/location.svg" class="prop-icon">
+                                <p>Belgrade</p>
+                            </div>
+                        </div>
+                        <p>This cozy studio apartment is the perfect place for a single person or 
+                            a couple. The apartment features a ( ... )
+                        </p>
+                    </div>
+                </a>
+                <a class="apt-card" href="./Apartment.html">
+                    <img src="./assets/apartment-3.jpg" alt="apartment image">
+                    <div class="apt-info">
+                        <div class="apt-title">
+                            <h4>Spacious 2-bedroom apartment with modern finishes</h4>
+                            <span>620&euro; / monthly<span>
+                        </div>
+                        <div class="apt-props">
+                            <div class="apt-prop">
+                                <img src="./assets/Room.svg" class="prop-icon">
+                                <p>2.0</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/size.svg" class="prop-icon">
+                                <p>60m2</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/location.svg" class="prop-icon">
+                                <p>Novi Sad</p>
+                            </div>
+                        </div>
+                        <p>This spacious 2-bedroom apartment is the perfect place to call 
+                            home. The apartment features modern finishes, a fully equipped 
+                            kitchen, and a ( ... )
+                        </p>
+                    </div>
+                </a>
+                <a class="apt-card" href="./Apartment.html">
+                    <img src="./assets/apartment-4.jpg" alt="apartment image">
+                    <div class="apt-info">
+                        <div class="apt-title">
+                            <h4>Luxurious 3-bedroom penthouse with panoramic views</h4>
+                            <span>1200&euro; / monthly<span>
+                        </div>
+                        <div class="apt-props">
+                            <div class="apt-prop">
+                                <img src="./assets/Room.svg" class="prop-icon">
+                                <p>3.0</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/size.svg" class="prop-icon">
+                                <p>120m2</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/location.svg" class="prop-icon">
+                                <p>Novi Sad</p>
+                            </div>
+                        </div>
+                        <p>This luxurious 3-bedroom penthouse is located in a prestigious building 
+                            with panoramic views of the city. The apartment features ( ... )
+                        </p>
+                    </div>
+                </a>
+                <a class="apt-card" href="./Apartment.html">
+                    <img src="./assets/apartment-5.jpg" alt="apartment image">
+                    <div class="apt-info">
+                        <div class="apt-title">
+                            <h4>Charming 2-bedroom apartment in a historic building</h4>
+                            <span>550&euro; / monthly<span>
+                        </div>
+                        <div class="apt-props">
+                            <div class="apt-prop">
+                                <img src="./assets/Room.svg" class="prop-icon">
+                                <p>2.0</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/size.svg" class="prop-icon">
+                                <p>84m2</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/location.svg" class="prop-icon">
+                                <p>Belgrade</p>
+                            </div>
+                        </div>
+                        <p>This charming 2-bedroom apartment is located in a beautiful historic 
+                            building. The apartment features high ceilings, ( ... )
+                        </p>
+                    </div>
+                </a>
+                <a class="apt-card" href="./Apartment.html">
+                    <img src="./assets/apartment-6.jpg" alt="apartment image">
+                    <div class="apt-info">
+                        <div class="apt-title">
+                            <h4>Charming downtown studio with unbeatable location</h4>
+                            <span>350&euro; / monthly<span>
+                        </div>
+                        <div class="apt-props">
+                            <div class="apt-prop">
+                                <img src="./assets/Room.svg" class="prop-icon">
+                                <p>0.5</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/size.svg" class="prop-icon">
+                                <p>35m2</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/location.svg" class="prop-icon">
+                                <p>Belgrade</p>
+                            </div>
+                        </div>
+                        <p>This cozy studio apartment is located in the heart of the city, 
+                            within walking distance to all of the best shops, restaurants ( ... )
+                        </p>
+                    </div>
+                </a>
+                <a class="apt-card" href="./Apartment.html">
+                    <img src="./assets/apartment-7.jpg" alt="apartment image">
+                    <div class="apt-info">
+                        <div class="apt-title">
+                            <h4>Spacious two-bedroom in modern complex with amazing amenities</h4>
+                            <span>550&euro; / monthly<span>
+                        </div>
+                        <div class="apt-props">
+                            <div class="apt-prop">
+                                <img src="./assets/Room.svg" class="prop-icon">
+                                <p>2.0</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/size.svg" class="prop-icon">
+                                <p>60m2</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/location.svg" class="prop-icon">
+                                <p>Novi Sad</p>
+                            </div>
+                        </div>
+                        <p>This two-bedroom apartment is located in a recently-built complex 
+                            with a wide range of amenities including a ( ... )
+                        </p>
+                    </div>
+                </a>
+                <a class="apt-card" href="./Apartment.html">
+                    <img src="./assets/apartment-8.jpg" alt="apartment image">
+                    <div class="apt-info">
+                        <div class="apt-title">
+                            <h4>Stylish one-bedroom with private balcony and stunning city views</h4>
+                            <span>550&euro; / monthly<span>
+                        </div>
+                        <div class="apt-props">
+                            <div class="apt-prop">
+                                <img src="./assets/Room.svg" class="prop-icon">
+                                <p>1.0</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/size.svg" class="prop-icon">
+                                <p>54m2</p>
+                            </div>
+                            <div class="apt-prop">
+                                <img src="./assets/location.svg" class="prop-icon">
+                                <p>Belgrade</p>
+                            </div>
+                        </div>
+                        <p>This stunning one-bedroom apartment features a private balcony 
+                            with breathtaking views of the city skyline. The ( ... )
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-main">
+                <div id="footer-logo-btt">
+                    <img alt="Dweller Logo" src="./assets/Logo-blue.svg"> <a href="#top">Back to top</a>
+                </div>
+
+
+                <div class="footer-links">
+                    <div>
+                        <a class="footer-link" href="./Login.html">Login</a>
+                        <a class="footer-link" href="./Register.html">Register</a>
+                    </div>
+
+
+                    <div>
+                        <a class="footer-link" href="./index.html">Home</a>
+                        <a class="footer-link" href="./Browse.html">Browse</a>
+                        <a class="footer-link" href="./About.html">About</a>
+                        <a class="footer-link" href="./Contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="madeby">
+                <p>Made with ☕ and 💙 by Marija Milovanovic IT 92/22</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
