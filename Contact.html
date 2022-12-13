@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
-    <title>Dweller | Beautiful 1-bedroom apartment in the heart of the city</title>
+    <title>Contact | Dweller</title>
 </head>
 
 <body>
@@ -44,13 +44,13 @@
                     <li class="menu-link">
                         <a href="./index.html">Home</a>
                     </li>
-                    <li class="menu-link active">
+                    <li class="menu-link">
                         <a href="./Browse.html">Browse</a>
                     </li>
                     <li class="menu-link">
                         <a href="./About.html">About</a>
                     </li>
-                    <li class="menu-link">
+                    <li class="menu-link active">
                         <a href="./Contact.html">Contact</a>
                     </li>
                 </ul>
@@ -59,13 +59,13 @@
                     <li class="menu-link">
                         <a href="./index.html">Home</a>
                     </li>
-                    <li class="menu-link active">
+                    <li class="menu-link">
                         <a href="./Browse.html">Browse</a>
                     </li>
                     <li class="menu-link">
                         <a href="./About.html">About</a>
                     </li>
-                    <li class="menu-link">
+                    <li class="menu-link active">
                         <a href="./Contact.html">Contact</a>
                     </li>
                 </ul>
@@ -85,63 +85,35 @@
             </div>
         </div>
 
-        <div class="browse-top">
+        <a id="top" name="top"></a>
+
+        <div class="page-content">
+            <h1 class="title">Contact Us</h1>
+
             <form action="./Browse.html">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
+                <div>
+                    <label for="full-name">Full Name:</label><br>
+                    <input type="text" id="full-name" placeholder="Full Name" minlength="2" required>
+                    <label class="error-label">Please Enter your full name.</label><br>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                    <label class="error-label">Please use a valid email address.</label><br>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" placeholder="Type your message here">
+                    </textarea>
+                </div> 
+
+                <input type="submit" value="Send Message" class="btn">
             </form>
         </div>
 
-        <a id="top" name="top"></a>
-        <div class="page-content page-browse apartment-page">
-            <div class="apartment-wrapper">
-                <div class="left">
-                    <div class="apartment-heading">
-                        <h1 class="title">Beautiful 1-bedroom apartment in the heart of the city</h1>
-                        <img src="./assets/apartment-1-min.jpg" alt="Beautiful 1-bedroom apartment in the heart of the city" class="apartment-img">
-                    </div>
-                    <div class="apt-props">
-                        <div class="apt-prop">
-                            <img src="./assets/Room.svg" class="prop-icon">
-                            <p>1.0</p>
-                        </div>
-                        <div class="apt-prop">
-                            <img src="./assets/size.svg" class="prop-icon">
-                            <p>64m2</p>
-                        </div>
-                        <div class="apt-prop">
-                            <img src="./assets/location.svg" class="prop-icon">
-                            <p>Belgrade</p>
-                        </div>
-                        <div class="apt-prop">
-                            <span>500&euro; / monthly</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <p class="apt-desc-long">This stunning 1-bedroom apartment is located in the heart of the city, 
-                        just steps away from popular restaurants and shopping destinations. 
-                        The building itself offers a range of amenities, including a fitness 
-                        center and rooftop pool. The apartment itself features high-end 
-                        finishes and appliances, as well as floor-to-ceiling windows that 
-                        offer stunning city views. A private balcony provides the perfect 
-                        spot to enjoy a cup of coffee in the morning or a glass of wine at 
-                        night. This is a truly unbeatable location for anyone looking to live
-                         in the heart of the city.</p>
-                    <a href="./Login.html" class="contact">
-                        <img src="./assets/contact.svg" alt="contact">
-                        <p>Contact Us</p>
-                    </a>
-                </div>
-            </div>
-            <div class="apartment-gallery">
-                <img src="./assets/apartment-1-min.jpg" alt="apartment gallery image">
-                <img src="./assets/apt-1-min.jpg" alt="apartment gallery image">
-                <img src="./assets/apt-2-min.jpg" alt="apartment gallery image">
-                <img src="./assets/apt-3-min.jpg" alt="apartment gallery image">
-            </div>
-            
-        </div>
+
         <div id="footer">
             <div id="footer-main">
                 <div id="footer-logo-btt">

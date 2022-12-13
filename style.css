@@ -442,7 +442,7 @@ form input::placeholder {
     color: var(--text-disabled);
 }
 
-form input {
+form input, form textarea {
     height: 36px;
     width: 100%;
     padding: 0px 8px;
@@ -455,7 +455,7 @@ form input {
     border-radius: 6px;
 }
 
-form input:focus-visible {
+form input:focus-visible, form textarea:focus-visible {
     outline: none;
     border-color: rgba(56, 169, 240, 0.75);
     -webkit-box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.75);
@@ -488,6 +488,15 @@ form input:not(:placeholder-shown):invalid {
 
 form input:not(:placeholder-shown):invalid ~ .error-label {
     display: block;
+}
+
+form textarea {
+    font-family: 'Montserrat';
+    padding: var(--spacing-xs);
+    width: 100%;
+    min-height: 150px;
+    text-align: justify;
+    box-sizing: border-box;
 }
 
 .social-login {
